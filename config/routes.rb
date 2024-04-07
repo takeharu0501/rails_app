@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'game_reviews/index'
   get 'game_reviews/new'
+  post 'game_reviews' => 'game_reviews#create'
   get 'game_reviews/show'
   get 'game_reviews/edit'
   get 'hello/index'

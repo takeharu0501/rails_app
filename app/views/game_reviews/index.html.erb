@@ -1,2 +1,7 @@
-<h1>GameReviews#index</h1>
-<p>Find me in app/views/game_reviews/index.html.erb</p>
+<h1>レビュー一覧</h1>
+<% @game_reviews.each do |reviews| %>
+    <p>タイトル</p>
+    <span><%= reviews.title %></span>
+    <p>本文</p>
+    <span><%= reviews.body %></span>
+<% end %>
