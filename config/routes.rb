@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'game_reviews/index'
+  get 'game_reviews/new'
+  get 'game_reviews/show'
+  get 'game_reviews/edit'
   get 'hello/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
